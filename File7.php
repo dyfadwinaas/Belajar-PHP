@@ -11,6 +11,7 @@
 //memproses form
 $username = $_POST['uname'];
 $password = $_POST['pass'];
+
 //tampilkan data jika sudah diproses
 $login = $_POST['login'];
 if(isset($login)){

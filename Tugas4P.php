@@ -17,9 +17,6 @@ $ar_skill = [
     "Laravel" => 40
 ];
 
-
-$domisili = ["Jakarta", "Bandung", "Yogyakarta", "Semarang", "Magelang"];
-
 ?>
 
     <fieldset style="background-color: khaki;">

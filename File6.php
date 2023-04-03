@@ -8,6 +8,7 @@
 </form>
 
 <?php
+error_reporting(0);
 //memproses form
 $nama = $_GET['nama'];
 $almt = $_GET['alamat'];

@@ -19,7 +19,6 @@
         <input type="text" name="nilai" placeholder="Masukkan nilai anda">
         <button name="proses" type="submit">Simpan</button>
     </form>
-
     <?php
     $nama = $_POST ['nama'];
     $matakuliah = $_POST['Matkul'];

@@ -6,9 +6,6 @@ $b3 = ['kode'=>'b1', 'buah'=>'Belimbing', 'harga'=>15000, 'jml' => 10];
 $b4 = ['kode'=>'b2', 'buah'=>'Bangkuang', 'harga'=>10000, 'jml' => 15];
 $b5 = ['kode'=>'c1', 'buah'=>'Cerry', 'harga'=>35000, 'jml' => 2];
 
-//array associative
-$buah2an =[$b1,$b2,$b3,$b4,$b5];
-$ar_judul = ['no','kode','buah','harga', 'Jumlah'];
 
 //fungsi-fungsi sederhana
 $jumlah_data = count($buah2an);

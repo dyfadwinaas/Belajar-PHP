@@ -17,7 +17,7 @@ $ar_skill = [
 ];
 
 
-$domisili = ["Jakarta", "Bandung", "Wakatobi", "Kendari", "Ambon"];
+$domisili = ["Jakarta", "Bandung", "Yogyakarta", "Semarang",];
 
 ?>
 

@@ -16,8 +16,6 @@ class Pegawai{
         $this -> status = $status;
         self::$jml++;
     }
-
-    // Hitung Gaji Pokok
     public function setGajiPokok($jabatan){
         $this->jabatan = $jabatan;
         switch($jabatan){
@@ -29,37 +27,31 @@ class Pegawai{
         }
         return $gapok;
     }
-
-    // Hitung Tunjangan Jabatan
     public function TunJab(){
        $tunjab =  0.2 * $this->setGajiPokok($this->jabatan);
        return $tunjab;
     }
 
-    // Hitung Tunjangan Keluarga
     public function TunKel(){
         $tunkel = ($this->status == "Menikah")? 0.1 * $this->setGajiPokok($this->jabatan) : 0 ;
         return $tunkel;
     }
+    
+    public function ZakatProfesi(){
+    $zakat = ($this->agama == "Islam" && $this->GajiKotor() >= 6000000)? 0.025 * $this->setGajiPokok($this->jabatan) : 0 ;
+    return $zakat;
+    }
 
-    // Hitung Gaji Kotor
     public function GajiKotor(){
         $gaji_kotor = $this->setGajiPokok($this->jabatan) + $this->TunJab() + $this->TunKel();
         return $gaji_kotor;
     }
-
-    // Hitung Zakat
-    public function ZakatProfesi(){
-        $zakat = ($this->agama == "Islam" && $this->GajiKotor() >= 6000000)? 0.025 * $this->setGajiPokok($this->jabatan) : 0 ;
-        return $zakat;
-    }
-
-    // Hitung Gaji Bersih
     public function GajiBersih(){
         $gaji_bersih = $this->GajiKotor() - $this->ZakatProfesi();
         return $gaji_bersih;
     }
 
+    //CETAK
     public function cetak(){
         echo '<b><u>'.self::PT.'</u></b>';
         echo '<br> Nama Pegawai : ' .$this -> nama;

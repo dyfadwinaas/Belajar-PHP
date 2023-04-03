@@ -97,7 +97,7 @@ $nilai = [
     
     <?php 
 }?>
-<style>
+<div style>
     h1{
   font-family: sans-serif;
 }
