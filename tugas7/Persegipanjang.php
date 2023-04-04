@@ -1,7 +1,7 @@
 <?php
 require_once 'abstrakT6.php';
 
-class PersegiPanjang extends Bentuk2D{
+class Persegipanjang extends Bentuk2D{
     public $panjang;
     public $lebar;
     public function __construct($panjang, $lebar){
